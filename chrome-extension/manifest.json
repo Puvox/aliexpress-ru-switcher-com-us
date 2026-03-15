@@ -1,8 +1,8 @@
 {
-  "name": "Aliexpress global switcher",
+  "name": "Aliexpress .RU to .COM/US switcher",
   "manifest_version": 3,
   "version": "2.0.0",
-  "description": "Automate switch from ru to global version aliexpress.com",
+  "description": "Automate switch from .RU to global version aliexpress.com",
   "permissions": [
     "tabs",
     "storage",
@@ -14,9 +14,14 @@
   "host_permissions": [
     "https://login.aliexpress.com/*",
     "https://login.aliexpress.ru/*",
+    "https://login.aliexpress.us/*",
     "https://aliexpress.ru/*",
+    "https://www.aliexpress.ru/*",
+    "https://aliexpress.com/*",
     "https://www.aliexpress.com/*",
-    "https://wp.aliexpress.com/*"
+    "https://wp.aliexpress.com/*",
+    "https://aliexpress.us/*",
+    "https://www.aliexpress.us/*"
   ],
   "background": {
     "service_worker": "./js/background.js"
